@@ -2,6 +2,8 @@
  *   Copyright (c) 2025 
  *   All rights reserved.
  */
+/* This is the CSS file for the index.html page */
+
 .container {
   display: flex;
   color: antiquewhite;
@@ -9,9 +11,37 @@
   align-items: center;
   justify-content: center;
   background-color: #0f0f0fd2;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   height: 100vh;
+}
+
+.ditHoortHierNiet {
+  color: antiquewhite;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+a {
+  width: 25%;
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+  background-image: linear-gradient(to right, #b62ccb, #240956);
+  border-radius: 5px;
+  color: antiquewhite;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+footer {
+  color: antiquewhite;
 }
