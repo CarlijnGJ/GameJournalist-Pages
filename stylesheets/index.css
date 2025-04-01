@@ -2,7 +2,41 @@
  *   Copyright (c) 2025 
  *   All rights reserved.
  */
-/* This is the CSS file for the index.html page */
+
+#secret {
+  background-color: #0f0f0f25;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 9999;
+  border-radius: 50%;
+}
+
+#psst {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  rotate: 330deg;
+  font-size: 24px;
+  opacity: 0;
+  white-space: nowrap;
+  color: antiquewhite;
+}
+
+@keyframes psstAnimation {
+  0% { opacity: 0; transform: translate(0, 0); }
+  10% { opacity: 0.5; }
+  50% { opacity: 0.5; transform: translate(-40px, 8px); }
+  55% { opacity: 0; }
+  90% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.show-animation {
+  animation: psstAnimation 3s ease-in-out;
+}
 
 .container {
   display: flex;
