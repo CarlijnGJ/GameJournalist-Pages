@@ -20,32 +20,73 @@
         <div class="title-container">
             <h2>Entries</h2>
             <hr>
-            <p>???</p>
+            <button id="entry1">Kena: Bridge of Spirits</button>
             <hr>
-            <p>???</p>
+            <button id="entry2">???</button>
             <hr>
-            <p>???</p>
+            <button id="entry3">???</button>
         </div>
 
-        <div class="entry-container">
+        <div class="entry-container" id="welcome_text">
             <p>Beste lezer,</p>
             <p>
                 Allereerst wil ik je welkom heten in dit journal. Hier sla ik alles op over mijn avonturen in de verschillende
                 games waar ik heenspring en hou ik de statussen van de werelden achter die games bij.
             </p>
             <p>
-                Ik hoor je vragen: 'Naar een game springen?' en dat snap ik volledig. Ik heb op dit moment alleen niet de vrijheid
-                om uit te leggen wat die uitspraak precies betekent. Het is allemaal nog erg nieuw. Dit deel van mij is nog erg
-                nieuw. Ik moet nu eerst leren wat deze kracht precies is en hoe hij werkt. Geduld is de sleutel tot het kunnen geven
-                van antwoorden. Nu informatie weggeven brengt het risico dat ik jullie fout inlicht en om eerlijk te zijn ben ik nog 
-                erg overrompeld door dit alles.
+                Ik hoor je vragen: 'Naar een game springen?' en dat snap ik volledig. Het is nog steeds erg nieuw, maar ik zal mijn best 
+                doen om het jullie uit te leggen. Toen ik weken geleden op stream 'Kena: Bridge of Spirits' aan het spelen was, voelde ik 
+                mezelf na het afsluiten van de stream erg duizelig worden. Ik kon niet goed meer zien. Het leek haast een migraine. Pas 
+                toen ik mijn ogen dichtdeed om erin te wrijven en ze seconden later weer opende, stond ik ineens in Taro's bos.
             </p>
             <p>
-                Jullie krijgen snel meer informatie van me. Erewoord. Smmh pgagdnth ow yizu ty pcuq zssjcluvlnplz. Hducqg pha tn pyofth sihl flz.
+                Hoe ik daar kwam weet ik niet zeker, maar het is daarna vaker gebeurt. Elke keer met de laatste game die ik die dag 
+                speelde. Er moet een connectie zijn. Dat kan haast niet anders.
             </p>
             <p>
                 - GJ
             </p>
         </div>
+
+        <div class="entry-container hidden" id="firstentry_text">
+            <h1>Kena: Bridge of Spirits</h1>
+            <p>
+                <b>Status:</b> Stabiel <br>
+                <b>Gevonden karakers:</b> Taro, Kena, Rusu, The Rot
+            </p>
+            <p>
+                Bezoek 1: Taro's bos <br>
+                Ik kwam in een bos terecht. Het was erg stil en ik kon alleen maar het geluid van de natuur horen. Het was een beetje mistig,
+                maar ik kon de bomen en planten goed zien. Daardoor was ik er al snel achter dat ik in Taro's bos was. Na een tijdje rond
+                gelopen te hebben, kwam ik een paar schattige wezentjes tegen. Ze zagen eruit als kleine zwarte bolletjes met ogen. Ik herkende
+                ze als de Rot. Ze waren erg vriendelijk en leken blij om me te zien. Ik vroeg ze of ze me naar Kena konden brengen en één van
+                hen wees naar een pad dat verder het bos in leidde. Ik volgde het pad en kwam al snel bij een open plek met een grote boom.
+                De boom was prachtig en had een soort gouden gloed. Iets vertelde me dat dit de plek was waar Kena zometeen zou zijn.
+            </p>
+            <p>
+                Ik besloot om te wachten en na een tijdje kwam Kena aanlopen. Ze leek verrast om me te zien en vroeg me hoe ik hier was gekomen.
+                De uitleg die ik gaf was niet makkelijk. Ik vertelde haar dat ik een gamer was en dat ik in haar wereld was gekomen door het spelen 
+                van een spel over haar verhaal. Ze leek het niet helemaal te begrijpen en bracht me naar Rusu. Rusu leek erg opgelucht dat ik er was.
+                Hij liet continu het woord 'Talejumper' vallen. Ik begreep niet helemaal wat hij bedoelde, maar het klonk alsof ik hier moest zijn.
+                Rusu heeft me geleerd hoe ik terug kon springen naar mijn wereld en uitlegd dat ik hier was om het verhaal van Kena te beschermen en
+                te verzorgen. De verkenning van het bos zou hierbij helpen en ik mocht op de minder gevaarlijke plekken mee met Kena.
+            </p>
+        </div>
     </div>
 </body>
+
+<script>
+    firstentry = document.getElementById("entry1");
+    secondentry = document.getElementById("entry2");
+    thirdentry = document.getElementById("entry3");
+
+    welcome = document.getElementById("welcome_text");
+    firstentry_text = document.getElementById("firstentry_text");
+    secondentry_text = document.getElementById("secondentry_text");
+    thirdentry_text = document.getElementById("thirdentry_text");
+
+    entry1.addEventListener("click", function() {
+        welcome.classlist.add("hidden");
+        firstentry_text.classlist.remove("hidden");
+    });
+</script>
