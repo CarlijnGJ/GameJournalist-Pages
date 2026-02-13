@@ -25,6 +25,9 @@
             <button id="entry2">Myst Remastered</button>
             <hr>
             <button id="entry3">Bendy and the Ink Machine</button>
+            <hr>
+            <button id="entry4">Clair Obscur: Expedition 33</button>
+            <hr>
         </div>
 
         <div class="entry-container" id="welcome_text">
@@ -99,10 +102,11 @@
             <h1>Bendy and the Ink Machine</h1>
             <p>
                 <b>Status:</b> Wankel <br>
-                <b>Gevonden karakers:</b> Henry, Bendy, Sammy, Boris
+                <b>Gevonden karakers:</b> Henry, Bendy, Sammy
             </p>
+
+            <h3>Bezoek 1: Muziekafdeling</h3>
             <p>
-                Bezoek 1: Muziekafdeling <br>
                 Tuurlijk hebben ze me hier geplaatst. Dat ik nu blijkbaar een 'Talejumper' ben, betekent niet dat ik altijd in de fijnste situaties
                 word geplaatst. Ik werd wakker in een donkere ruimte, omringd door de geluiden van druppelend water en het gekraak van hout. Mijn
                 omgeving herkende ik direct: de muziekafdeling van de studio waar Bendy en zijn vrienden ooit leefden. Het was een spookachtige plek,
@@ -120,6 +124,27 @@
                 terecht, waar ik muziek vanachter de deur naar de hal hoorde komen. Het klonk als een viool, Sammy dus waarschijnlijk. Ik ben er stilletjes
                 langsgeslopen en heb hem niet gestoord. In plaats daarvan zocht ik naar de medische ruimte om te kijken of ik goederen in kon slaan.
             </p>
+            <h3>Bezoek 2: Muziekafdeling</h3>
+            <p>
+                Ik noem het onaangename omstandigheden, maar ik had naar ergere plekken kunnen springen. Alice haar domein bijvoorbeeld. Wanneer je daar 
+                over nadenkt, is opnieuw wakkerworden in dat van Sammy nog niet eens zo erg. Ik heb daarnaast gelukkig nog spullen om mijn reis wat 
+                makkelijker te maken.
+            </p>
+            <p>
+                Het voelde vreemder dit keer. Onrustig, alsof de wereld aan het draaien is. Spoiler alert; dat was die ook, want toen ik de hal naar Sammy's 
+                kantoor indraaide, moest ik me snel tussen een set tonnen verstoppen om te zorgen dat Henry me niet zou zien. Gelukkig ben ik de dans 
+                ontsprongen, want hij was al snel de medische vleugel in verdwenen. Dat betekende dus dat Sammy nu in de repetitiezaal was. Even twijfelde ik. 
+                Sammy was gestoord. Psychopatisch. Hij had Henry zonder pardon aan Bendy geofferd als de inktdemoon hem niet in de plaats koos. Maar tegelijk 
+                was hij misschien wel mijn dichtstbijzijnde kans op antwoorden voor waarom ik telkens naar zijn domein word gestuurd.
+            </p>
+            <p class="message_sjl">Je hoort tussen de bladmuziek. - S.J.L.</p>
+            <p>
+                Tegen de tijd dat ik eindelijk in de repetitiezaal aankwam, was Sammy al verdwenen...
+            </p>
+        </div>
+
+        <div class="entry-container hidden" id="fourthentry_text">
+            <h1 id="fourthentry_title">This world is not accessible yet...</h1>
         </div>
     </div>
 
@@ -128,9 +153,10 @@
         const firstentry_text = document.getElementById("firstentry_text");
         const secondentry_text = document.getElementById("secondentry_text");
         const thirdentry_text = document.getElementById("thirdentry_text");
+        const fourthentry_text = document.getElementById("fourthentry_text");
 
         const entryButtons = document.querySelectorAll(".title-container button");
-        const entryTextContainers = [firstentry_text, secondentry_text, thirdentry_text];
+        const entryTextContainers = [firstentry_text, secondentry_text, thirdentry_text, fourthentry_text];
 
         entryButtons.forEach((button, index) => {
             button.addEventListener("click", function() {
@@ -145,4 +171,5 @@
             });
         });
     </script>
+    <script src="/scripts/entries.js"></script>
 </body>
