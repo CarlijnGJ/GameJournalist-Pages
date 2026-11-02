@@ -1,40 +1,81 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<!-- Metadata -->
     <meta charset="utf-8">
-    <meta name="keywords" content="halfdraak, twitch, youtube, linktree, variety">
-	<meta name="robots" content="index, follow">
-	<title>Linktree Socials</title>
-
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="/stylesheets/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Halfdraak - Linktree</title>
+    <meta name="description" content="Halfdraak: linktree en socials.">
+    <meta name="theme-color" content="#07050b">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <script src="scripts/index.js" defer></script>
 </head>
-<body style="background-image: url('images/background.png'); background-size: cover; background-repeat: no-repeat;">
-
+<body>
     <div id="secret">
         <span id="psst">Psst...</span>
     </div>
 
-    <!-- Main content -->
-    <div class="container">
-        <h1>Linktree van Carlijn</h1>
-        <p>Welkom op mijn website/linktree! Hier kan je alle links vinden die je nodig hebt om te volgen wat ik doe.</p>
-        
-        <a href="https://www.twitch.tv/halfdraak" target="_blank">Mijn Twitch | Halfdraak</a>
-        <a href="https://www.youtube.com/@Halfdraak" target="_blank">Mijn YouTube | Halfdraak</a>
-        <a href="https://www.instagram.com/halfdraak/" target="_blank">Mijn Instagram | @halfdraak</a>
-        <a href="https://discord.com/invite/eQgb8sK" target="_blank">Mijn Discord | GJ Squad</a>
-        <a href="https://www.tiktok.com/@halfdraak" target="_blank">Mijn TikTok | @halfdraak</a>
+    <main class="wrap">
+        <header class="hero">
+            <span class="now"><span class="dot" aria-hidden="true"></span>Currently: druk druk druk aan CyberMode</span>
+            <h1 aria-label="Carlijn"><span id="naam" aria-hidden="true">Carlijn</span><span class="caret" aria-hidden="true"></span></h1>
+            <p class="intro"><strong>Content creator en hobbymatig developer</strong> uit Overijssel, Nederland. Ik creëer digitale ervaringen en laat hierin mijn creativiteit de vrije loop.</p>
+        </header>
+    </main>
 
-    </div>
+    <section aria-labelledby="find">
+        <div class="head"><h2 id="find">Mijn Nesten</h2><span class="label">Socials</span></div>
+        <ul class="links">
+            <li><a href="https://www.twitch.tv/halfdraak" target="_blank" rel="noopener"><span class="net">Twitch</span><span class="handle">Halfdraak</span><span class="arr">↗</span></a></li>
+            <li><a href="https://www.youtube.com/@Halfdraak" target="_blank" rel="noopener"><span class="net">YouTube</span><span class="handle">Halfdraak</span><span class="arr">↗</span></a></li>
+            <li><a href="https://www.instagram.com/halfdraak/" target="_blank" rel="noopener"><span class="net">Instagram</span><span class="handle">@halfdraak</span><span class="arr">↗</span></a></li>
+            <li><a href="https://www.tiktok.com/@halfdraak" target="_blank" rel="noopener"><span class="net">TikTok</span><span class="handle">@halfdraak</span><span class="arr">↗</span></a></li>
+            <li><a href="https://discord.com/invite/eQgb8sK" target="_blank" rel="noopener"><span class="net">Discord</span><span class="handle">Tempestpact</span><span class="arr">↗</span></a></li>
+        </ul>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Halfdraak. All rights reserved.</p>
-    </footer>
+    <section aria-labelledby="work">
+        <div class="head"><h2 id="work">Mijn Projecten & Collabs</h2><span class="label">Nu &amp; vroeger</span></div>
+        <div class="filters" role="group" aria-label="Filter projects">
+        <button type="button" id="f-all" data-f="all" aria-pressed="true">Alles</button>
+        <button type="button" id="f-active" data-f="active" aria-pressed="false">Actief</button>
+        <button type="button" id="f-archived" data-f="archived" aria-pressed="false">Gearchiveerd</button>
+        </div>
+        <div class="grid" id="projects">
+        <article class="card" data-s="active">
+            <div class="meta"><span class="chip active">Actief</span><span>Juni 2025 —</span></div>
+            <h3>CyberMode</h3>
+            <p>CyberMode is een Minecraft-server met een unieke storyline en gameplay, gericht op de Cyberpunk-ervaring van een innovatieve dystopie. Mijn Discord geeft hier meer informatie over.</p>
+            <ul class="tags"><li>development</li><li>game design</li></ul>
+            <a class="go" href="https://discord.com/invite/eQgb8sK" target="_blank" rel="noopener">Leer meer op Discord ↗</a>
+        </article>
+        <article class="card" data-s="active">
+            <div class="meta"><span class="chip active">Actief</span><span>Nov. 2025 —</span></div>
+            <h3>Secrets of the Keep</h3>
+            <p>'Secrets of the Keep' is mijn puzzel-fangame, gebaseerd op de We Were Here serie. Dit project staat op Itch.io en wordt af en toe geüpdatet.</p>
+            <ul class="tags"><li>development</li><li>creative writing</li></ul>
+            <a class="go" href="https://winged-enigma.itch.io/secrets-of-the-keep" target="_blank" rel="noopener">Bekijk de game ↗</a>
+        </article>
+        <article class="card" data-s="archived">
+            <div class="meta"><span class="chip archived">Gearchiveerd</span><span>Jan. 2025 – Juni 2025</span></div>
+            <h3>Radiant Roleplay</h3>
+            <p>Ik heb mogen streamen op het prachtige Radiant Roleplay, een GTA5-server van twee goeie vrienden. Al mijn avonturen op deze server zijn nu nog op Twitch te vinden.</p>
+            <ul class="tags"><li>collaboration</li><li>roleplay</li></ul>
+            <a class="go" href="https://youtu.be/c6oxohd435o?si=cLpLeJsyLKgQSFU8" target="_blank" rel="noopener">Kijk de opgeslagen streams ↗</a>
+        </article>
+        <article class="card" data-s="archived">
+            <div class="meta"><span class="chip archived">Gearchiveerd</span><span>Feb. 2023 – Aug. 2025</span></div>
+            <h3>Mysteria</h3>
+            <p>Ik heb mee mogen helpen aan het maken van Mysteria, een Minecraft horror-walkthrough gebaseerd op het verhaal van een professor die gek werd van liefdesverdriet.</p>
+            <ul class="tags"><li>collaboration</li><li>voice-acting</li></ul>
+            <a class="go" href="https://youtu.be/c6oxohd435o?si=cLpLeJsyLKgQSFU8" target="_blank" rel="noopener">Bekijk de trailer ↗</a>
+        </article>
+        </div>
+    </section>
 
-    <script src="/scripts/index.js"></script>
-
+    <footer><span>© 2026 Carlijn</span><span>Overijssel, Nederland</span></footer>
+    </main>
 </body>
-
 </html>
